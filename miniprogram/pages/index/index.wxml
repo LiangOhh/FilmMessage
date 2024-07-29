@@ -1,0 +1,8 @@
+
+<view class="container {{isReady? 'is-visible' : 'is-hidden'}}">
+  <search-index is-top="{{isTop}}"></search-index>
+    <swiper-index swiper="{{swiper}}" is-top="{{isTop}}"></swiper-index>
+    <menu-index></menu-index>
+  <button bind:tap="test">1</button>
+ <movie-box></movie-box>
+</view>

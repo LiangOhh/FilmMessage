@@ -1,0 +1,12 @@
+<view class="container">
+  <swiper class="home-swiper" autoplay="{{true}}" interval="2000" duration="500" circular bindchange="swiperChange">
+    <swiper-item class="swiper-item" wx:for="{{swiper}}" wx:for-item="pic" wx:key="id">
+      <image class="slide-image" src="{{pic.banner}}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+  <view class='swiper-indicator'>
+    <text class="dot {{index ==  swiperIndex ? 'is-active': ''}}" wx:for="{{swiper}}" wx:key="index" />
+  </view>
+</view>
+<!-- 背景渗透 , 启用相对定位进行背景色底部穿透 -->
+<view class="bgcolor {{ !isTop ? 'transparent': '' }}" style="{{ backgroundStyle }}"></view>

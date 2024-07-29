@@ -1,0 +1,29 @@
+.container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  .titleBar{
+    display: flex;
+  align-items: center;
+  padding: 0 16rpx;
+  .search{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(#ccc,.65);
+    border-radius:  100rpx;
+    .search-icon{
+      display: inline-flex;
+      align-items: center;
+      margin-left: 10rpx;
+      font-size: 24rpx;
+    }
+    .search-label{
+      flex: 1;
+      margin-left: 20rpx;
+      font-size: 28rpx;
+    }
+  }
+  }
+}

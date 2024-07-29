@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-index":"./components/search-index/search-index",
+    "swiper-index":"./components/swiper-index/swiper-index",
+    "menu-index":"./components/menu-index/menu-index"
+  },
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,4 @@
+project.config.json
+miniprogram/node_modules
+cloudfunctions
+miniprogram/miniprogram_npm

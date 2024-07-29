@@ -1,0 +1,37 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "i-icon":"./components/i-icon/i-icon",
+    "movie-box":"./components/movie/movie-box"
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/tabbar/index.png",
+      "selectedIconPath": "images/tabbar/index_active.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "个人",
+      "iconPath": "images/tabbar/user.png",
+      "selectedIconPath": "images/tabbar/user_active.png"
+    }]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "FilmMessage",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
