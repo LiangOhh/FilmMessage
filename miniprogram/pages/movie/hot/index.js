@@ -1,67 +1,68 @@
-// pages/movie/hot/index.js
-import {getHot} from "../../../api/api"
+import {
+  getHot
+} from "../../../api/api"
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    params: {
+      page: 1,
+      per_page: 10,
+      order: 'desc'
+    },
+    list: [],
+    isShowSkeleton:true
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
- async onLoad(options) {
-const item = await getHot()
-console.log(item);
+
+  async onLoad(options) {
+    const item = await getHot(this.data.params)
+    // console.log(item);
+    this.setData({
+      list: item.data,
+      isShowSkeleton:false
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+
   onReady() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
+
   onShow() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
+
   onHide() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
+
   onUnload() {
 
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
   onPullDownRefresh() {
 
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
 
+  async onReachBottom() {
+    let { page } = this.data.params;
+    page += 1;
+    this.setData({
+      'params.page': page,  
+    });
+    let {data} = await getHot(this.data.params)
+   console.log(data);
+    this.setData({
+      list:[...this.data.list, ...data]
+    })
+    console.log(this.data.list);
   },
 
-  /**
-   * 用户点击右上角分享
-   */
+
   onShareAppMessage() {
 
   }

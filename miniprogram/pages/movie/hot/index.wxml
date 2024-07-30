@@ -1,2 +1,4 @@
-<!--pages/movie/hot/index.wxml-->
-<text>pages/movie/hot/index.wxml</text>
+<skeleton wx:if="{{isShowSkeleton}}" top="15rpx" />
+<view wx:else class="container">
+  <movie-item wx:for="{{list}}" movie="{{item}}" wx:key="id"></movie-item>
+</view>

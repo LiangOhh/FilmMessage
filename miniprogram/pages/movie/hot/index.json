@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "skeleton":"../components/skeleton/index"
+  },
+  "navigationBarTitleText": "正在热映"
+
 }

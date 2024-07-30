@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="poster">
+    <image src="{{movie.poster}}" 
+    mode="aspectFill"
+    lazy-load
+    class="img"
+    />
+  </view>
+  <view class="info">
+    <view class="info-header">
+     <text class="title" >{{movie.title}}</text>
+     <text class="rate">{{movie.rating}}分</text>
+    </view>
+    <view class="info-section">
+      <!-- <view class="cate">分类</view> -->
+      <view class="year">{{movie.year? movie.year : '未知' }} </view>
+      <view class="genres">{{movie.genres}}</view>
+      <view class="country">{{movie.countries}}</view>
+    </view>
+    <view class="info-footer">
+      <slot></slot>
+    </view>
+  </view>
+</view>

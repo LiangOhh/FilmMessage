@@ -1,0 +1,54 @@
+.container{
+  position: relative;
+  display: flex;
+  margin:0 30rpx;
+  padding: 16rpx 0;
+  background-color: #fff;
+  border-bottom: 2rpx solid rgba(204, 204, 204, 0.7);
+  // box-shadow: 1px 10px 10px;
+  .poster{
+    position: relative;
+    flex-shrink:0 ;
+    width: 160rpx;
+    height: 220rpx;
+    overflow: hidden;
+    border-radius: 6rpx;
+    .img{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#f5f5f5, 0.45);
+    }
+  }
+  .info{
+    flex: 1;
+    margin-left: 20rpx;
+    .info-header{
+      display: flex;
+      justify-content: space-between;
+      height: 45rpx;
+      line-height: 45rpx;
+      .title{
+        font-size: 32rpx;
+        color:var(--color-theme);
+        flex: 1;
+        flex-shrink: 0;
+        overflow: hidden;
+      }
+      .rate{
+        color:var(--color-hot);
+        width: 120rpx;
+        font-size: 28rpx;
+        text-align: right;
+      }
+    }
+    .info-section  {
+      // background-color: red;
+      view{
+        padding-top: 12rpx;
+        height: 46rpx;
+        font-size: 24rpx;
+        color: #999;
+      }     
+    }
+  }
+}
