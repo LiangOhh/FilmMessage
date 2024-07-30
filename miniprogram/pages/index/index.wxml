@@ -4,5 +4,9 @@
     <swiper-index swiper="{{swiper}}" is-top="{{isTop}}"></swiper-index>
     <menu-index></menu-index>
   <button bind:tap="test">1</button>
- <movie-box></movie-box>
+
+ <m-panel>
+  <movie-box wx:for="[2,1,3]"></movie-box>
+ </m-panel>
+ 
 </view>

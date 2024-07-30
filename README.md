@@ -38,6 +38,10 @@ wxml文件:
 <text class="iconfont icon-{{name}}"></text>
 ```
 
+## 封装影视盒子组件
+
+
+
 ## 封装网络请求
 
 [接口文档](https://doc.ixook.com/doc/movie-mobile-test/api?api=readme)

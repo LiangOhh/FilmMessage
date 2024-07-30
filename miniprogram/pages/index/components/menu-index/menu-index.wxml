@@ -1,6 +1,6 @@
 <view class="container">
   <view class="list">
-    <view class="item" wx:for="{{list}}" wx:key="id" bind:tap="test" data-data="{{item}}">
+    <view class="item" wx:for="{{list}}" wx:key="id" catch:tap="toNavigate" data-url="{{item.url}}">
       <i-icon class="icon" name="{{item.icon}}"></i-icon>
       <text class="name">{{item.name}}</text>
     </view>

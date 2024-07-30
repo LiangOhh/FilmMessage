@@ -2,15 +2,15 @@
   position: relative;
   vertical-align: top;
   display: inline-block;
-  margin-right: 16rpx;
+  margin-right:16rpx;
   padding-bottom: 15rpx;
   width: 188rpx;
-  box-shadow: 0 9px 13px;
+  box-shadow: 0 1px 4px;
+  border-radius: 10rpx;
   
-
-  &:nth-last-child(1) {
-    margin-right: 0;
-  }
+  // &:nth-last-child(1) {
+  //   margin-right: 0;
+  // }
 
   .movie-poster {
     position: relative;
@@ -51,6 +51,6 @@
     white-space: nowrap;
     // background-color: rebeccapurple;
     text-align: center;
-    background: #e3f3ff;
+  
   }
 }

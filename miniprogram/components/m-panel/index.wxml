@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="panel-header">
+    <view class="title">正在热映</view>
+    <view class="more">
+      <text class="total">100</text>
+      <i-icon class="icon" name="arrow-right"></i-icon>
+    </view>
+  </view>
+  <view class="panel-content scroll-x" >
+    <slot></slot>
+  </view>
+</view>

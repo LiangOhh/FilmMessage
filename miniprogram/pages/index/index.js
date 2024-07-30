@@ -19,7 +19,15 @@ Page({
     }
   },
   async test(){
-    console.log(this.data.swiper);
+    // console.log(this.data.swiper);
+   /*  wx.reLaunch({
+      url: '../user/user',
+      
+    }) */
+    wx.navigateTo({
+      // url: '../movie/hot/index',
+      url:"/pages/movie/hot/index"
+    })
   },
   /**
    * 生命周期函数--监听页面加载

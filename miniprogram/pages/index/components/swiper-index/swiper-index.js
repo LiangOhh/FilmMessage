@@ -6,12 +6,11 @@ Component({
       console.log(this.properties.swiper);
     }
   },
-  pageLifetimes:{
+ /*  pageLifetimes:{
     show(){
-      console.log(1);
-      console.log(this.properties.swiper);
+      
     }
-  },
+  }, */
   /**
    * 组件的属性列表
    */

@@ -1,0 +1,68 @@
+.container {
+  margin: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #fff;
+  border-radius: 13rpx;
+  overflow: hidden;
+  box-shadow: 0 6px 10px;
+  height: 410rpx;
+
+  .panel-header {
+    padding: 0 20rpx;
+    height: 84rpx;
+    // background-color: red;
+    font-size: 30rpx;
+    line-height: 84rpx;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    &::before {
+      content: "";  /* 伪元素内容，次属性必须有 */
+      margin-right: 8rpx;
+      width: 6rpx;
+      height: 28rpx;
+      border-radius: 10px;
+      background-color: var(--color-hot); /* 使用全局定义的主题色 */
+    }
+  
+    .title {
+      flex: 1;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    .more {
+      height: 80rpx;
+      font-size: 28rpx;
+      padding-left: 8rpx;
+      color: inherit;
+      .total{
+       padding-right: 4rpx;
+      }
+      .icon {
+        color: inherit;
+        font-size: 24rpx;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .panel-content {
+    width: 100%;
+    padding: 2rpx 5rpx;
+
+
+    &.scroll-x {
+
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+
+      // 隐藏滚动条
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

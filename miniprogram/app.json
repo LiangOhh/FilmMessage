@@ -2,12 +2,14 @@
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "i-icon":"./components/i-icon/i-icon",
-    "movie-box":"./components/movie/movie-box"
+    "movie-box":"./components/movie/movie-box",
+    "m-panel":"./components/m-panel"
   },
   "pages": [
     "pages/index/index",
     "pages/user/user",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/movie/hot/index"
   ],
   "tabBar": {
     "selectedColor": "#1296db",
@@ -33,5 +35,8 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "resolveAlias": {
+    "@/*":"/*"
+  }
 }
